@@ -1,0 +1,64 @@
+/* Fonts: EB Garamond for body, Times New Roman (Oswald?) for headers */
+body {
+    font-family: 'EB Garamond', serif;
+    color: #222;
+    background-color: #fffdf8;
+    line-height: 1.7;
+}
+
+.title {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.section-heading {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+}
+
+.navbar-toggler {
+    margin-left : auto;
+    margin-right : auto;
+}
+
+.navbar-light .navbar-toggler {
+    border: none !important;       /* kill the border */
+    box-shadow: none !important;   /* kill the shadow on click */
+    outline: none !important;
+}
+
+.portfolio-card {
+    border: 1px solid #333;
+    border-radius: 0;
+    background: #fff;
+    transition: transform 0.2s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-3px);
+}
+
+footer {
+    font-size: 0.85rem;
+    color: #444;
+}
