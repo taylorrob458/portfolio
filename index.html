@@ -20,6 +20,8 @@
 
         <!-- Custom Styles -->
         <link rel="stylesheet" href="website.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
     </head>
     <body>
         <!-- Header -->
@@ -196,9 +198,10 @@
         </section>
 
         <!-- Resume -->
-        <section>
-            <div>
-                <embed src="/resources/resume.pdf" type="application/pdf" width="100%" height="100%" />
+        <section class="py-3 text-center">
+            <div class="container resume">
+                <h2 class="section-heading">Resume</h2>
+                <canvas id="pdf-viewer"></canvas>
             </div>
         </section>
 
