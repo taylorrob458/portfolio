@@ -115,6 +115,10 @@ footer {
   transition: font-size 0.2s ease, margin 0.2s ease;
 }
 
+.contact {
+  letter-spacing: 1px;
+}
+
 /* Shrink spacing and font a bit on smaller screens */
 @media (max-width: 768px) {
   .navbar-nav .nav-link {
