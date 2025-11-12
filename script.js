@@ -1,5 +1,5 @@
 // URL of your PDF (local or online)
-    const url = 'resources/resume.pdf'; // change to your PDF path
+    const url = 'assets/resume.pdf'; // change to your PDF path
 
     // Load the PDF
     const loadingTask = pdfjsLib.getDocument(url);
