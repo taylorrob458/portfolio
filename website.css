@@ -62,3 +62,40 @@ footer {
     font-size: 0.85rem;
     color: #444;
 }
+
+/* Keep navbar inline and responsive without wrapping or hamburger */
+.navbar-nav {
+  flex-wrap: nowrap;            /* Force inline */
+  justify-content: center;
+  overflow-x: auto;             /* Allow horizontal scroll if absolutely needed */
+  scrollbar-width: none;        /* Hide scrollbar on Firefox */
+  -ms-overflow-style: none;     /* Hide scrollbar on IE/Edge */
+}
+
+.navbar-nav::-webkit-scrollbar {
+  display: none;                /* Hide scrollbar on WebKit browsers */
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;          /* Prevent link text from breaking */
+  margin: 0 0.75rem;
+  font-size: 0.9rem;
+  transition: font-size 0.2s ease, margin 0.2s ease;
+}
+
+/* Shrink spacing and font a bit on smaller screens */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    margin: 0 0.4rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-nav .nav-link {
+    margin: 0 0.25rem;
+    font-size: 0.75rem;
+  }
+}
