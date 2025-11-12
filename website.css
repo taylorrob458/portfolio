@@ -1,95 +1,95 @@
 /* Fonts: EB Garamond for body, Times New Roman (Oswald?) for headers */
 body {
-    font-family: 'EB Garamond', serif;
-    color: #222;
-    background-color: #fffdf8;
-    line-height: 1.7;
+  font-family: 'EB Garamond', serif;
+  color: #222;
+  background-color: #fffdf8;
+  line-height: 1.7;
 }
 
 .title {
-    font-family: 'Times New Roman', serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  font-family: 'Times New Roman', serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .subtitle {
-    font-family: 'EB Garamond', serif;
-    font-style: italic;
-    font-size: 1.25rem;
-    color: #555;
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: #555;
 }
 
 .section-heading {
-    font-family: 'Times New Roman', serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #000;
-    display: inline-block;
-    padding-bottom: 0.25rem;
+  font-family: 'Times New Roman', serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  padding-bottom: 0.25rem;
 }
 
 .navbar-nav .nav-link {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    margin: 0 1rem;
-    font-size: 0.9rem;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  margin: 0 1rem;
+  font-size: 0.9rem;
 }
 
 .navbar-toggler {
-    margin-left : auto;
-    margin-right : auto;
+  margin-left : auto;
+  margin-right : auto;
 }
 
 .navbar-light .navbar-toggler {
-    border: none !important;       /* kill the border */
-    box-shadow: none !important;   /* kill the shadow on click */
-    outline: none !important;
+  border: none !important;       /* kill the border */
+  box-shadow: none !important;   /* kill the shadow on click */
+  outline: none !important;
 }
 
 .languages {
-    font-size: 16px;
-    color: #555;
-    letter-spacing: 1px;
+  font-size: 16px;
+  color: #555;
+  letter-spacing: 1px;
 }
 
 .portfolio-card {
-    border: 1px solid #333;
-    border-radius: 0;
-    background: #fff;
-    transition: transform 0.2s;
+  border: 1px solid #333;
+  border-radius: 0;
+  background: #fff;
+  transition: transform 0.2s;
 }
 
 .portfolio-card:hover {
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 .anchor {
-    display: block;
-    position: relative;
-    top: -20px;
-    visibility: hidden;
+  display: block;
+  position: relative;
+  top: -20px;
+  visibility: hidden;
 }
 
 .anchor-resume {
-    display: block;
-    position: relative;
-    top: -50px;
-    visibility: hidden;
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
 }
 
 footer {
-    font-size: 0.85rem;
-    color: #444;
+  font-size: 0.85rem;
+  color: #444;
 }
 
 #pdf-viewer {
-    display: block;
-    width: 95%;
-    max-width: 800px;
-    border: 1px solid #333;
-    margin: 1rem auto;
-    /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);*/
+  display: block;
+  width: 95%;
+  max-width: 800px;
+  border: 1px solid #333;
+  margin: 1rem auto;
+  /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);*/
 }
 
 /* Keep navbar inline and responsive without wrapping or hamburger */
@@ -130,5 +130,13 @@ footer {
   .navbar-nav .nav-link {
     margin: 0 0.25rem;
     font-size: 0.75rem;
+  }
+
+  .section-heading {
+    width: 300px;          /* or any fixed width */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;    /* centers text inside too */
+    display: block;        /* ensures margins work */
   }
 }
