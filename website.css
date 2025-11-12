@@ -88,9 +88,8 @@ footer {
     width: 95%;
     max-width: 800px;
     border: 1px solid #333;
-    /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);*/
     margin: 1rem auto;
-    padding: 0.5rem;             /* creates space between PDF content and border */
+    /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);*/
 }
 
 /* Keep navbar inline and responsive without wrapping or hamburger */
