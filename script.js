@@ -1,3 +1,5 @@
+console.log("lightbox script loaded");
+
 // URL of your PDF (local or online)
     const url = 'assets/resume.pdf'; // change to your PDF path
 
@@ -34,3 +36,16 @@ document.querySelectorAll('.nav-link').forEach(link => {
         }
     });
 });
+
+function openLightbox(img) {
+    document.getElementById('lightbox').style.display = 'block';
+    document.getElementById('lightbox-image').src = img.src;
+
+    const captionText = img.alt || "";
+
+    document.getElementById('lightbox-caption').innerHTML = `
+        <div class="caption-box">
+            ${captionText}
+        </div>
+    `;
+}

@@ -161,3 +161,42 @@ footer {
     border: 1px solid #333;
     transition: opacity 0.2s ease;
 }
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+
+    overflow-y: auto;      /* 🔥 allows scrolling */
+    padding: 2rem 1rem;
+}
+
+#lightbox-image,
+#lightbox-caption {
+    max-width: 90vw;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+#lightbox-image {
+    max-height: 75vh;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 0; /* critical: removes gap */
+}
+
+#lightbox-caption {
+    background: rgba(0,0,0,0.66);
+    color: white;
+    padding: 0.9rem 1rem;
+    margin: 0;
+
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
