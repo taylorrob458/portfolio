@@ -48,4 +48,10 @@ function openLightbox(img) {
             ${captionText}
         </div>
     `;
+    const lightboxImage = document.getElementById('lightbox-image');
+    const captionEl = document.getElementById('lightbox-caption');
+
+    lightboxImage.onload = function () {
+    captionEl.style.width = lightboxImage.clientWidth + "px";
+    };  
 }
