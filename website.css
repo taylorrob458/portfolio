@@ -78,6 +78,13 @@ body {
   visibility: hidden;
 }
 
+.photoseries-anchor {
+  display: block;
+  position: relative;
+  top: -25px;
+  visibility: hidden;
+}
+
 footer {
   font-size: 0.85rem;
   color: #444;
