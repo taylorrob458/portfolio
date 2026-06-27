@@ -125,33 +125,6 @@ footer {
   letter-spacing: 1px;
 }
 
-/* Shrink spacing and font a bit on smaller screens */
-@media (max-width: 768px) {
-  .navbar-nav .nav-link {
-    margin: 0 0.4rem;
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar-nav .nav-link {
-    margin: 0 0.25rem;
-    font-size: 0.75rem;
-  }
-
-  .section-heading {
-    width: 300px;          /* or any fixed width */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;    /* centers text inside too */
-    display: block;        /* ensures margins work */
-  }
-
-  .series-description {
-    text-align: center;
-  }
-}
-
 .portfolio-card .border-bottom {
     min-height: 80px;
 }
@@ -216,4 +189,61 @@ footer {
 
 .series-description {
     display: inline-block;
+    position: relative;
+    vertical-align: -0.85em;
+    padding-left: 0.75em;
+    transform: translateX(1.5rem);
+}
+
+.series-description::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 15%;
+    height: 70%;   /* adjust to taste */
+
+    width: 1px;
+    background: #333;
+}
+
+/* Shrink spacing and font a bit on smaller screens */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    margin: 0 0.4rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-nav .nav-link {
+    margin: 0 0.25rem;
+    font-size: 0.75rem;
+  }
+
+  .section-heading {
+    width: 300px;          /* or any fixed width */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;    /* centers text inside too */
+    display: block;        /* ensures margins work */
+  }
+
+  .series-description {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    transform: none;
+    padding: 0;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+  .series-description::before {
+    display: none;
+    content: none;
+  }
 }
